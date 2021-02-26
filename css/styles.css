@@ -1,0 +1,98 @@
+*{
+	padding:0;
+	margin:0;
+	font-family:"NimbusSanDee";
+}
+
+html,body{
+	width:100%;
+	height:100%;
+}
+
+@font-face {
+	font-family: "NimbusSanDee";
+	src: url("../fonts/NimbusSanDEE.ttf");
+}
+
+textarea{
+	resize:none;
+	overflow:hidden;
+}
+
+#glavni{
+	margin:auto;
+	width:210mm;
+	height:101.6mm;
+	border:solid black 1px;
+}
+
+.talon{
+	position:absolute;
+	float:left;
+	width:60mm;
+	height:101.6mm;
+	border-right:solid black 1px;
+}
+
+.nalogzaplacilo{
+	position:absolute;
+	float:left;
+	clear:both;
+	margin-left:60.2mm;
+	width:149.8mm;
+	height:41.3mm;
+	background-color:rgb(245, 208, 209);
+}
+
+.nalogzaplacilospodnji{
+	margin-top:41.5mm;
+	margin-left:60.1mm;
+	width:149.9mm;
+	height:50.6mm;
+	background-color:rgb(250, 252, 202);
+}
+
+.upn{
+	font-size:10pt;
+	font-weight:bold;
+	margin-left:3.9mm;
+	margin-top:1mm;
+}
+
+.pisavatalon{
+	font-weight:bold;
+	font-size:7pt;
+	color:rgb(255, 133, 120);
+	margin-left:3.9mm;
+}
+
+.pisavanalog{
+	font-weight:bold;
+	font-size:7pt;
+	color:rgb(255, 133, 120);
+	margin-left:3.9mm;
+}
+
+.inputnalog{
+	margin-left:3.9mm;
+	letter-spacing:1mm;
+}
+
+.signature{
+	position:absolute;
+	float:left;
+	clear:both;
+	width:50mm;
+	height:28mm;
+	margin-left:5mm;
+	margin-top:-19mm;
+	background-color:white;
+}
+
+.podatkiocr{
+	position:absolute;
+	float:left;
+	width:150mm;
+	height:10mm;
+	margin-left:60mm;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UPN obrazec</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+	<body>
+
+		<form>
+			<div id="glavni">
+				<div class="talon">
+					<h4 class="upn">UPN</h4>
+					<p class="pisavatalon">Ime plačnika</p>
+					<textarea style="margin-left:3.9mm" cols="31"></textarea>
+					<p class="pisavatalon">Namen / rok plačila</p>
+					<textarea style="margin-left:3.9mm" cols="31"></textarea>
+					<p class="pisavatalon" style="margin-left:18mm">Znesek</p>
+					<h4 style="margin-left:8mm">EUR<input type="text" name="znesek"
+						 style="margin-left:2mm" size="23"></h4>
+					<p class="pisavatalon">IBAN prejemnika in BIC banke prejemnika</p>
+					<textarea cols="31" rows="3" style="margin-left:3.9mm"></textarea>
+					<p class="pisavatalon">Referenca prejamnika</p>
+					<input type="text" name="refprejemnika" style="margin-left:3.9mm" size="32" maxlength="26">
+					<p class="pisavatalon">Ime prejemnika</p>
+					<textarea cols="31" rows="2" style="margin-left:3.9mm"></textarea>
+					<p class="pisavatalon" style="font-weight:none; margin-top:19mm">Potrditev plačila UPN</p>
+
+				</div>
+					
+				<div class="nalogzaplacilo">
+					<p class="pisavanalog" style="margin-top:1mm">IBAN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Polog &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Dvig</p>
+					<input type="text" name="ibanplacnika" size="35" class="inputnalog" maxlength="19">
+					<input type="radio" name="neki" id="polog" value="polog" style="margin-left:3mm">
+					<input type="radio" name="neki" id="dvig" value="dvig" style="margin-left:10mm">
+					<p class="pisavanalog">Referenca</p>
+					<input type="text" name="refplacnika" class="inputnalog" size="7" maxlength="4">
+					<input type="text" name="refplacnika2" size="40" class="inputnalog" style="margin-left:0mm" maxlength="22">
+					<p class="pisavanalog">Ime in naslov</p>
+					<textarea rows="2" cols="49" style="margin-left:3.9mm"></textarea>
+					<span class="signature" style="border:rgb(255, 133, 120) solid .1px">
+						<canvas id="podpis" style="width:50mm;height:28mm"></canvas>
+					</span>
+					<br>
+					<p class="pisavanalog" style="display:inline">Koda namena</p>
+					<p style="display:inline-block; margin-left: 4mm" class="pisavanalog">Namen / rok plačila</p>
+					<p style="display:inline-block; margin-left: 81mm" class="pisavanalog">Nujno</p>
+					<div>
+						<input type="text" name="kodanamena"   class="inputnalog" size="7" maxlength="4">
+						<input type="text" name="namenrokplacila" class="inputnalog" size="60">
+						<input type="checkbox" name="nujno" class="inputnalog">
+					</div>
+				</div>
+				<div class="nalogzaplacilospodnji">
+					<p class="pisavanalog" style="display:inline; margin-left:15mm">Znesek</p>
+					<p class="pisavanalog" style="display:inline; margin-left:21mm">Datum plačila</p>
+					<p class="pisavanalog" style="display:inline; margin-left:23.5mm">BIC banke prejemnika</p>
+					<h4 style="margin-left:5mm">EUR<input type="text" name="znesek"
+						 style="margin-left:2mm" size="15"><input type="date" name="datum"
+						 style="margin-left:2mm"><input type="text" name="bicbanke"
+						 style="margin-left:2mm" size="22"></h4>
+					<div>
+						<p class="pisavanalog" style="display:inline">IBAN<p style="display:inline; margin-left:116mm" class="pisavanalog">Izjava</p></p>
+						<input type="text" name="ibanprejemnika" class="inputnalog" size="65">
+						<input type="checkbox" name="izjava" style="margin-left:15mm">
+					</div>
+						<p class="pisavanalog">Referenca</p>
+						<input type="text" name="refprejemnika" size="7" class="inputnalog" maxlength="4">
+						<input type="text" name="refprejemnika2" size="45" class="inputnalog" maxlength="26">
+						<h4 style="display:inline" class="upn">UPN</h4>
+						<p style="display:inline; font-size:10pt">-univerzalni plačilni nalog</p>
+						<p class="pisavanalog">Ime in naslov</p>
+						<textarea cols="71" style="margin-left:3.9mm"></textarea>
+						<p class="pisavanalog" style="margin-left:50mm; margin-top:2mm">Prostor za vpise ponudnika plačilnih storitev</p>
+					</div>
+					<div class="podatkiocr">
+						<img src="koda.png" style="margin-left:10mm; margin-top:2.5mm">
+					</div>
+			</div>
+		</form>
+
+		<script type="text/javascript" src="podpis.js"></script>
+
+	</body>
+</html>
